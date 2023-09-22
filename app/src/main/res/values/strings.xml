@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GBV</string>
+    <string name="Register">Register</string>
+    <string name="join">Would you like to join the community?</string>
+    <string name="Log">Login</string>
+    <string name="Password">Password</string>
+    <string name="Username">Username</string>
+    <string name="main">Awareness, capacity building and psychological support</string>
+    <string name="intro">GBV</string>
+</resources>
