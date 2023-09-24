@@ -4,7 +4,9 @@
     <string name="join">Would you like to join the community?</string>
     <string name="Log">Login</string>
     <string name="Password">Password</string>
+    <string name="help">Get help from now</string>
     <string name="Username">Username</string>
+    <string name="speak">Contact</string>
     <string name="main">Awareness, capacity building and psychological support</string>
     <string name="intro">GBV</string>
 </resources>
