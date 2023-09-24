@@ -6,7 +6,9 @@
     <string name="Password">Password</string>
     <string name="help">Get help from now</string>
     <string name="Username">Username</string>
-    <string name="speak">Contact</string>
+    <string name="speak">Speak with people who can help you over come the fear of GBV</string>
+    <string name="connect">Speak now</string>
     <string name="main">Awareness, capacity building and psychological support</string>
     <string name="intro">GBV</string>
+    <string name="forget">Forgot Password?</string>
 </resources>
