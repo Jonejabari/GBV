@@ -77,7 +77,8 @@
                     android:layout_marginBottom="26dp"
                     android:backgroundTint="#EDE8E9"
                     android:text="@string/Log"
-                    android:textColor="#353434" />
+                    android:textColor="#353434"
+                    style="?android:attr/buttonBarButtonStyle" />
 
                 <Button
                     android:id="@+id/btnRegister"
@@ -89,7 +90,8 @@
                     android:layout_marginBottom="26dp"
                     android:backgroundTint="#EDE8E9"
                     android:text="@string/Register"
-                    android:textColor="#353434" />
+                    android:textColor="#353434"
+                    style="?android:attr/buttonBarButtonStyle" />
 
             </LinearLayout>
 

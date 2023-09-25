@@ -4,11 +4,23 @@
     <string name="join">Would you like to join the community?</string>
     <string name="Log">Login</string>
     <string name="Password">Password</string>
-    <string name="help">Get help from now</string>
+    <string name="help">Get help</string>
     <string name="Username">Username</string>
     <string name="speak">Speak with people who can help you over come the fear of GBV</string>
     <string name="connect">Speak now</string>
     <string name="main">Awareness, capacity building and psychological support</string>
     <string name="intro">GBV</string>
     <string name="forget">Forgot Password?</string>
+    <string name="cert">Awareness Material</string>
+    <string name="material">Get some material, instructions and tools you need to provide community to GBV survivors</string>
+    <string name="Knowledge">Knowledge Hub</string>
+    <string name="GBV">GBV Conversation</string>
+    <string name="con">Join conversation that increase prevention GBV</string>
+    <string name="jon">Join Conversation</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="numbers">Numbers for emergency messages </string>
+    <string name="Num">Numbers for emergency call</string>
+    <string name="me">Enter Your First number</string>
+    <string name="ma">Enter Your Second Number</string>
 </resources>
