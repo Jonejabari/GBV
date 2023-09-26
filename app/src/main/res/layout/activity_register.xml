@@ -124,7 +124,7 @@
 
 
             <Button
-                android:id="@+id/btnLog"
+                android:id="@+id/btnReg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
