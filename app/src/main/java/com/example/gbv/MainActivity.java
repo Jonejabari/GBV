@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
     Button btnLogin,btnRegister;
+    TextView forget;
     String emailPatten = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
@@ -36,10 +38,19 @@ public class MainActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.Username);
         inputPassword = findViewById(R.id.Password);
         btnLogin = findViewById(R.id.btnLog);
+        forget = findViewById(R.id.forget);
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         btnRegister=findViewById(R.id.btnRegister);
+
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Forget.class);
+                startActivity(intent);
+            }
+        });
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                     if (task.isSuccessful()) {
                         progressDialog.dismiss();
                         sendUserToNextActivity();
-                        Toast.makeText(MainActivity.this, "Registration is completed", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Login is completed", Toast.LENGTH_SHORT).show();
                     } else {
                         Toast.makeText(MainActivity.this, "" + task.getException(), Toast.LENGTH_SHORT).show();
                     }

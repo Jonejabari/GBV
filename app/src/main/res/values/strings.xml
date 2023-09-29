@@ -16,11 +16,14 @@
     <string name="Knowledge">Knowledge Hub</string>
     <string name="GBV">GBV Conversation</string>
     <string name="con">Join conversation that increase prevention GBV</string>
-    <string name="jon">Join Conversation</string>
+    <string name="jon">Join</string>
     <string name="Yes">Yes</string>
     <string name="No">No</string>
     <string name="numbers">Numbers for emergency messages </string>
     <string name="Num">Numbers for emergency call</string>
     <string name="me">Enter Your First number</string>
     <string name="ma">Enter Your Second Number</string>
+    <string name="back">back to login</string>
+    <string name="reset">reset</string>
+    <string name="email">enter your email</string>
 </resources>

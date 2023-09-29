@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:text="@string/intro"
                 android:textColor="@color/black"
                 android:textSize="20sp"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="26dp"
                 android:text="@string/main"
                 android:textColor="@color/black"
@@ -55,7 +55,7 @@
                 android:layout_width="200dp"
                 android:layout_height="200dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="26dp"
                 android:layout_marginBottom="26dp"
                 android:background="@drawable/gn" />
@@ -65,6 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
                 android:layout_marginEnd="26dp"
+                android:layout_marginTop="0dp"
                 android:orientation="horizontal">
 
                 <Button
@@ -72,7 +73,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
                     android:backgroundTint="#EDE8E9"
@@ -80,11 +81,11 @@
                     android:textColor="#353434" />
 
                 <Button
-                    android:id="@+id/btnRegister"
+                    android:id="@+id/btnReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
                     android:backgroundTint="#EDE8E9"
@@ -99,7 +100,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="26dp"
                 android:backgroundTint="#48EAC9"
                 android:ems="10"
@@ -114,7 +115,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="26dp"
                 android:backgroundTint="#48EAC9"
                 android:hint="@string/Password"
@@ -124,11 +125,11 @@
 
 
             <Button
-                android:id="@+id/btnReg"
+                android:id="@+id/btnRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="26dp"
                 android:layout_marginBottom="26dp"
                 android:backgroundTint="#3F51B5"
