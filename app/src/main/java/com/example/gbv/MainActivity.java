@@ -19,6 +19,37 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationManager;
+import android.os.Bundle;
+import android.os.Looper;
+import android.provider.Settings;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
@@ -28,6 +59,15 @@ public class MainActivity extends AppCompatActivity {
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
+
+    private static final int ASK_MULTIPLE_PERMISSION_REQUEST_CODE = 123 ;
+    public static String adrr;
+    FusedLocationProviderClient mFusedLocationClient;
+    int PERMISSION_ID = 44;
+    SharedPreferences sharedPreferences ;
+    private static final String SHARED_PREF_NAME = "Myconts";
+    private static  final String Key_num = "number";
+    private static final  String Key_message = "message";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -43,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
         btnRegister=findViewById(R.id.btnRegister);
+
+
+
+
 
         forget.setOnClickListener(new View.OnClickListener() {
             @Override
