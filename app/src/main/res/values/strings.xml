@@ -26,4 +26,7 @@
     <string name="back">back to login</string>
     <string name="reset">reset</string>
     <string name="email">enter your email</string>
+    <string name="Phone">ENTER PHONE NO.</string>
+    <string name="Message">ENTER YOUR MESSAGE</string>
+    <string name="GO">SENT!</string>
 </resources>
