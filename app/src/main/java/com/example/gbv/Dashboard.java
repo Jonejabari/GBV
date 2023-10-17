@@ -7,11 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class Dashboard extends AppCompatActivity {
-    TextView speak,hub;
-    Button yes;
+    LinearLayout call,material,GBV;
+
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -19,25 +20,25 @@ public class Dashboard extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard);
 
-        speak = findViewById(R.id.help);
-        hub = findViewById(R.id.awareness);
-        yes = findViewById(R.id.message);
+        call = findViewById(R.id.help);
+        material = findViewById(R.id.material);
+        GBV = findViewById(R.id.GBV);
 
-        speak.setOnClickListener(new View.OnClickListener() {
+        call.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Chat.class);
                 startActivity(intent);
             }
         });
-        hub.setOnClickListener(new View.OnClickListener() {
+        material.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Resources.class);
                 startActivity(intent);
             }
         });
-        yes.setOnClickListener(new View.OnClickListener() {
+        GBV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Dashboard.this, Room.class);

@@ -4,154 +4,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/forgot"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="30dp"
-            tools:layout_editor_absoluteY="30dp">
-
-
-            <!--TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="-170dp"
-                android:text="@string/Login"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="40sp" /!-->
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="@string/intro"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:text="@string/main"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="italic" />
-
-            <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:layout_marginBottom="26dp"
-                android:background="@drawable/gn" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:background="#fff"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:orientation="horizontal">
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="30dp">
+
+
+                <!--TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-170dp"
+                    android:text="@string/Login"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="40sp" /!-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/intro"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:text="@string/main"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:layout_marginBottom="26dp"
+                    android:background="@drawable/gn" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnLo"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginBottom="26dp"
+                        android:backgroundTint="#EDE8E9"
+                        android:text="@string/Log"
+                        android:textColor="#353434" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="26dp"
+                        android:layout_marginBottom="26dp"
+                        android:backgroundTint="#EDE8E9"
+                        android:text="@string/Register"
+                        android:textColor="#353434" />
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/Username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="#48EAC9"
+                    android:ems="10"
+                    android:hint="@string/Username"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:textColorHint="#198365" />
+
+                <EditText
+                    android:id="@+id/Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="26dp"
+                    android:backgroundTint="#48EAC9"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:padding="15dp"
+                    android:textColorHint="#198365" />
+
 
                 <Button
-                    android:id="@+id/btnLo"
+                    android:id="@+id/btnLog"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
-                    android:backgroundTint="#EDE8E9"
+                    android:backgroundTint="#3F51B5"
                     android:text="@string/Log"
-                    android:textColor="#353434"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:textColor="@color/white" />
 
-                <Button
-                    android:id="@+id/btnRegister"
+                <TextView
+                    android:id="@+id/forget"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="26dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
-                    android:backgroundTint="#EDE8E9"
-                    android:text="@string/Register"
-                    android:textColor="#353434"
-                    style="?android:attr/buttonBarButtonStyle" />
+                    android:text="@string/forget"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+
 
             </LinearLayout>
 
-
-            <EditText
-                android:id="@+id/Username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:backgroundTint="#48EAC9"
-                android:ems="10"
-                android:hint="@string/Username"
-                android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:padding="15dp"
-                android:textColorHint="#198365" />
-
-            <EditText
-                android:id="@+id/Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:backgroundTint="#48EAC9"
-                android:hint="@string/Password"
-                android:inputType="textPassword"
-                android:padding="15dp"
-                android:textColorHint="#198365" />
-
-
-            <Button
-                android:id="@+id/btnLog"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="26dp"
-                android:layout_marginBottom="26dp"
-                android:backgroundTint="#3F51B5"
-                android:text="@string/Log"
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/forget"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="26dp"
-                android:layout_marginTop="-20dp"
-                android:layout_marginEnd="26dp"
-                android:text="@string/forget"
-                android:textColor="@color/black"
-                android:textSize="26sp" />
-
-
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </ScrollView>
 

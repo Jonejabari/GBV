@@ -5,11 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/forgot"
     tools:context=".MainActivity">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="8dp"
+            android:layout_margin="12dp"
+            android:background="#fff"
+            >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,10 +63,10 @@
                 android:textStyle="italic" />
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_marginStart="26dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="26dp"
                 android:layout_marginBottom="26dp"
                 android:background="@drawable/gn" />
@@ -84,7 +95,7 @@
                     android:id="@+id/btnReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="26dp"
+                    android:layout_marginStart="6dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
@@ -138,6 +149,8 @@
 
 
         </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </ScrollView>
 

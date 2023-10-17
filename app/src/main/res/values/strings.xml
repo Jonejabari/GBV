@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">GBV</string>
     <string name="Register">Register</string>
+    <string name="eme">emergency call</string>
     <string name="join">Would you like to join the community?</string>
     <string name="Log">Login</string>
     <string name="Password">Password</string>

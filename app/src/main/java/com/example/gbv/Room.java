@@ -74,6 +74,7 @@ public class Room extends AppCompatActivity {
                 FirebaseAuth a = FirebaseAuth.getInstance();
                 Date getDate = Calendar.getInstance().getTime();
                 db.getReference("Messages").child(a.getUid()+getDate.toString()).setValue(ed.getText().toString());
+                ed.getText().clear();
             }
         });
     }
