@@ -39,7 +39,7 @@ public class Dashboard extends AppCompatActivity {
         material.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dashboard.this, Resources.class);
+                Intent intent = new Intent(Dashboard.this, Report.class);
                 startActivity(intent);
             }
         });

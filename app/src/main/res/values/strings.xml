@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">GBV</string>
+    <string name="learn">Learning Material</string>
+    <string name="video">Videos</string>
+    <string name="doc">Documents</string>
+    <string name="camp">Campaigns</string>
+    <string name="law">Laws &amp; Policies</string>
     <string name="Register">Register</string>
     <string name="eme">emergency call</string>
     <string name="join">Would you like to join the community?</string>
