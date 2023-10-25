@@ -53,21 +53,21 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
-    Button btnLogin,btnRegister;
+    Button btnLogin, btnRegister;
     TextView forget;
     String emailPatten = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
-    private static final int ASK_MULTIPLE_PERMISSION_REQUEST_CODE = 123 ;
+    private static final int ASK_MULTIPLE_PERMISSION_REQUEST_CODE = 123;
     public static String adrr;
     FusedLocationProviderClient mFusedLocationClient;
     int PERMISSION_ID = 44;
-    SharedPreferences sharedPreferences ;
+    SharedPreferences sharedPreferences;
     private static final String SHARED_PREF_NAME = "Myconts";
-    private static  final String Key_num = "number";
-    private static final  String Key_message = "message";
+    private static final String Key_num = "number";
+    private static final String Key_message = "message";
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -82,16 +82,14 @@ public class MainActivity extends AppCompatActivity {
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
-        btnRegister=findViewById(R.id.btnRegister);
-
-
-
+        btnRegister = findViewById(R.id.btnRegister);
 
 
         forget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Forget.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -100,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Register.class);
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
@@ -144,10 +144,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void sendUserToNextActivity() {
-        Intent intent=new Intent(MainActivity.this,Dashboard.class);
+        Intent intent = new Intent(MainActivity.this, Dashboard.class);
 
         //this line prevent to back to this activity
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 }

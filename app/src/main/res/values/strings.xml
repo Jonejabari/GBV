@@ -12,10 +12,10 @@
     <string name="main">Awareness, capacity building and psychological support</string>
     <string name="intro">GBV</string>
     <string name="forget">Forgot Password?</string>
-    <string name="cert">Awareness Material</string>
+    <string name="cert">Awareness</string>
     <string name="material">Get some material, instructions and tools you need to provide community to GBV survivors</string>
     <string name="Knowledge">Knowledge Hub</string>
-    <string name="GBV">GBV Conversation</string>
+    <string name="GBV">Conversation</string>
     <string name="con">Join conversation that increase prevention GBV</string>
     <string name="jon">Join</string>
     <string name="Yes">Yes</string>
@@ -29,5 +29,6 @@
     <string name="email">enter your email</string>
     <string name="Phone">ENTER PHONE NO.</string>
     <string name="Message">ENTER YOUR MESSAGE</string>
-    <string name="GO">SENT!</string>
+    <string name="GO">SEND!</string>
+    <string name="welcome">Welcome, User</string>
 </resources>

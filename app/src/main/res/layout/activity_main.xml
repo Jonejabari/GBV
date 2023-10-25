@@ -13,21 +13,22 @@
         android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="12dp"
             android:layout_weight="1"
-            android:background="#fff"
+
+            android:backgroundTint="@color/ColorPrimaryDark"
             app:cardCornerRadius="8dp"
             app:cardElevation="2dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#3fff"
                 android:gravity="center"
                 android:orientation="vertical"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="30dp">
+                android:padding="10dp">
 
 
                 <!--TextView
@@ -42,14 +43,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:layout_marginTop="10dp"
+                    android:background="@drawable/circle"
+                    android:gravity="center"
                     android:text="@string/intro"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <!--TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -59,18 +61,18 @@
                     android:text="@string/main"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    android:textStyle="italic" />
+                    android:textStyle="italic" /!-->
 
-                <ImageView
+                <!--ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="26dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="26dp"
                     android:layout_marginBottom="26dp"
-                    android:background="@drawable/gn" />
+                    android:background="@drawable/gn" /!-->
 
-                <LinearLayout
+                <!--LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
@@ -104,62 +106,132 @@
                         android:text="@string/Register"
                         android:textColor="#353434" />
 
-                </LinearLayout>
+                </LinearLayout!-->
 
 
                 <EditText
                     android:id="@+id/Username"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
                     android:layout_marginStart="26dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="26dp"
-                    android:backgroundTint="#48EAC9"
-                    android:ems="10"
+                    android:background="@drawable/custombutton"
+                    android:drawableLeft="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="10dp"
                     android:hint="@string/Username"
-                    android:importantForAutofill="no"
                     android:inputType="textPersonName"
                     android:padding="15dp"
-                    android:textColorHint="#198365" />
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="#FFFBF6" />
 
                 <EditText
                     android:id="@+id/Password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
                     android:layout_marginStart="26dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="26dp"
-                    android:backgroundTint="#48EAC9"
+
+                    android:background="@drawable/custombutton"
+                    android:drawableLeft="@drawable/ic_baseline_lock_24"
+                    android:drawablePadding="10dp"
                     android:hint="@string/Password"
+
                     android:inputType="textPassword"
                     android:padding="15dp"
-                    android:textColorHint="#198365" />
+                    android:textColorHighlight="@color/white"
+                    android:textColorHint="#FFFBF6" />
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:buttonTint="@color/white"
+                        android:checked="true"
+                        android:text="Remember me"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/forget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+                        android:drawablePadding="6dp"
+                        android:padding="4dp"
+                        android:text="@string/forget"
+                        android:textColor="@color/white" />
+
+
+                </LinearLayout>
+
+
+                <!--Button
+                    android:id="@+id/btnLog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/login"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+
+                    android:text="@string/Log"
+                    android:textAllCaps="false" /!-->
 
                 <Button
                     android:id="@+id/btnLog"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="26dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginBottom="26dp"
-                    android:backgroundTint="#3F51B5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/login"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
                     android:text="@string/Log"
-                    android:textColor="@color/white" />
+                    android:textAllCaps="false" />
 
-                <TextView
-                    android:id="@+id/forget"
-                    android:layout_width="wrap_content"
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:background="#3fff" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="26dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="26dp"
-                    android:layout_marginBottom="26dp"
-                    android:text="@string/forget"
-                    android:textColor="@color/black"
-                    android:textSize="26sp" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/sign"
+                    android:padding="15dp"
+                    android:shadowColor="@android:color/transparent"
+                    android:text="@string/Register"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
 
 
             </LinearLayout>
