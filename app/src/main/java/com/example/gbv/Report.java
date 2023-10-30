@@ -33,6 +33,14 @@ public class Report extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        law.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Report.this,Documents.class);
+                //intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
 
 
         video.setOnClickListener(new View.OnClickListener() {
