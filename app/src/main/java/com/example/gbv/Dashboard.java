@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 public class Dashboard extends AppCompatActivity {
     LinearLayout call, material, GBV;
+    TextView user;
 
 
     @SuppressLint("MissingInflatedId")
@@ -27,6 +28,7 @@ public class Dashboard extends AppCompatActivity {
         call = findViewById(R.id.help);
         material = findViewById(R.id.material);
         GBV = findViewById(R.id.GBV);
+        user = findViewById(R.id.user);
 
 
         call.setOnClickListener(new View.OnClickListener() {

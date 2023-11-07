@@ -8,7 +8,7 @@
     <string name="Register">Register</string>
     <string name="eme">emergency call</string>
     <string name="join">Would you like to join the community?</string>
-    <string name="Log">Login</string>
+    <string name="Log">Log in</string>
     <string name="Password">Password</string>
     <string name="help">Get help</string>
     <string name="Username">Username</string>
@@ -35,5 +35,10 @@
     <string name="Phone">ENTER PHONE NO.</string>
     <string name="Message">ENTER YOUR MESSAGE</string>
     <string name="GO">SEND!</string>
-    <string name="welcome">Welcome, User</string>
+    <string name="welcome">Welcome,</string>
+    <string name="user">user</string>
+    <string name="name">Name</string>
+    <string name="email2">Email</string>
+    <string name="login">Already have account? Login</string>
+    <string name="register">Not yet registered? Sign Up</string>
 </resources>

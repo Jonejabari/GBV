@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
     Button btnLogin, btnRegister;
-    TextView forget;
+    TextView forget,  register;
     String emailPatten = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
@@ -77,12 +77,13 @@ public class MainActivity extends AppCompatActivity {
 
         inputEmail = findViewById(R.id.Username);
         inputPassword = findViewById(R.id.Password);
+        register = findViewById(R.id.register);
         btnLogin = findViewById(R.id.btnLog);
         forget = findViewById(R.id.forget);
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
-        btnRegister = findViewById(R.id.btnRegister);
+        //btnRegister = findViewById(R.id.btnRegister);
 
 
         forget.setOnClickListener(new View.OnClickListener() {
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnRegister.setOnClickListener(new View.OnClickListener() {
+        register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, Register.class);

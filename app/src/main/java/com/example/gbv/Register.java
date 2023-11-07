@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,18 +18,23 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class Register extends AppCompatActivity {
 
-    EditText inputEmail, inputPassword;
-    Button btnRegister, btnLogin;
+    EditText inputEmail, inputName, inputPassword;
+    TextView login;
+    Button btnRegister;
     String emailPatten = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
     ProgressDialog progressDialog;
+    FirebaseDatabase database;
+    DatabaseReference reference;
     FirebaseAuth mAuth;
     FirebaseUser mUser;
 
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,14 +42,18 @@ public class Register extends AppCompatActivity {
 
         inputEmail = findViewById(R.id.Username);
         inputPassword = findViewById(R.id.Password);
+        login = findViewById(R.id.login);
         btnRegister = findViewById(R.id.btnRegister);
-        btnLogin = findViewById(R.id.btnLog);
         progressDialog = new ProgressDialog(this);
+
+
+        //btnLogin = findViewById(R.id.btnLog);
+
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
 
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Register.this, MainActivity.class);
@@ -62,8 +72,34 @@ public class Register extends AppCompatActivity {
     }
 
     private void PerformAuth() {
+
         String email = inputEmail.getText().toString();
+        //String name = inputName.getText().toString();
         String password = inputPassword.getText().toString();
+
+        /*database = FirebaseDatabase.getInstance();
+        reference = database.getReference("users");
+
+
+
+
+        String email = inputEmail.getText().toString();
+        String name = inputName.getText().toString();
+        String password = inputPassword.getText().toString();
+
+        GlobalVar globalVar = new GlobalVar(email,name,password);
+        reference.child(name).setValue(globalVar);
+
+        Toast.makeText(this, "You have successfully registered", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(Register.this, MainActivity.class);
+        //this line prevent to back to this activity
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);*/
+
+
+
+
+
 
         if (!email.matches(emailPatten)) {
             inputEmail.setError("Please enter correct email");

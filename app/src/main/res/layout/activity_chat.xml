@@ -18,10 +18,7 @@
         android:padding="5dp"
         android:src="@drawable/back" />
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="UselessParent">
+
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -59,19 +56,38 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <EditText
-                    android:id="@+id/Phone"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="50dp"
-                    android:ems="10"
-                    android:importantForAutofill="no"
-                    android:inputType="phone"
-                    android:maxLength="10"
-                    android:padding="15sp"
-                    android:textColorHint="#0A0B0B" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_margin="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/Phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="10"
+                        android:importantForAutofill="no"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:padding="15sp"
+                        android:textColorHint="#0A0B0B" />
+
+                    <ImageButton
+                        android:id="@+id/sms"
+                        android:layout_width="45dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="-40dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:background="@drawable/smss" />
+
+                </LinearLayout>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -115,7 +131,7 @@
 
         </androidx.cardview.widget.CardView>
 
-    </ScrollView>
+
 
 
 </LinearLayout>
