@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Forget extends AppCompatActivity {
-    
+    //intiliaze variables
     Button back;
 
     @Override
