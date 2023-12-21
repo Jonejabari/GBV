@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 public class Chat extends AppCompatActivity {
 
-    // initialize variables
+    // initialize variables..
     EditText Phone, Message;
     Button BtnSent;
     ImageView back;
@@ -34,6 +34,7 @@ public class Chat extends AppCompatActivity {
         BtnSent = findViewById(R.id.btnSent);
         back = findViewById(R.id.Back);
 
+        //method to go back to dashboard..
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
