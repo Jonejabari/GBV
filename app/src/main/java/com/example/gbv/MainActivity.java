@@ -52,6 +52,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    //initialize variables
     EditText inputEmail, inputPassword;
     Button btnLogin, btnRegister;
     TextView forget,  register;
@@ -85,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
         mUser = mAuth.getCurrentUser();
         //btnRegister = findViewById(R.id.btnRegister);
 
-
+        //method to go back on forget_password page....
         forget.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //method to go back on register page....
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -104,7 +105,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        //call method of login page....
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
